@@ -1,13 +1,16 @@
 require(["gitbook", "jQuery"], function (gitbook, $) {
     let configs = null
     gitbook.events.bind('page.change', function (e, config) {
-        configs = gitbook.state.config.pluginsConfig['custom-header'] || {}
+        configs = gitbook.state.config.pluginsConfig['custom-header-next'] || {}
+        console.log(configs);
         configs && initHeader(configs)
     });
 
     function initHeader(_configs) {
-        let $head = '<div class="head"><div class="head_box">'
-        let $head_small = '<div class="head_small"><div class="swiper-container">'
+        let $head = '<header id="main"><div class="inner">';
+        let $head_small = '<header id=""><div class="swiper-container">';
+
+        console.log(_configs);
 
         $head += `
             <h1 class="logo">

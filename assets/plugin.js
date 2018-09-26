@@ -10,8 +10,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
         let $head_small = '<header id="small"><div class="swiper-container">';
 
         $head += `
-            <h1 class="logo">
-                <a href="/" title="${_configs['logo_alt']}">
+            <a href="/" title="${_configs['logo_alt']}" class="logo">
             `;
         if (_configs.logo) {
           $head += `
@@ -22,8 +21,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
                     <span>${_configs.text}</span>`;
         }
         $head += `
-                </a>
-            </h1>
+            </a>
         `;
         let activeIndex = 0
         if (_configs.navigations && _configs.navigations.length > 0) {//添加导航

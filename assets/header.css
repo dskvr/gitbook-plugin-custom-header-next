@@ -73,10 +73,6 @@ header#main {
     z-index: 10;
 }
 
-header#main .inner h1 {
-    margin: 0;
-}
-
 .logo {
     /* float: left; */
     height: 100%;
@@ -84,9 +80,7 @@ header#main .inner h1 {
 }
 
 .logo a {
-    display: block;
-    width: 250px;
-    height: 100%;
+    display: inline-block;
     overflow: hidden;
     text-decoration: none;
     line-height: 999em;
@@ -94,11 +88,10 @@ header#main .inner h1 {
 
 .logo a img {
     display: block;
-    height: 100%;
 }
 
 header#main .inner {
-    padding: 0 40px;
+    padding: 0 15px;
     position: relative;
     height: 60px;
     background-color: #fff;

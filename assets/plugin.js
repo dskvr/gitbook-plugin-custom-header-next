@@ -5,7 +5,6 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
         configs && initHeader(configs)
     });
 
-    // 初始化header
     function initHeader(_configs) {
         let $head = '<div class="head"><div class="head_box">'
         let $head_small = '<div class="head_small"><div class="swiper-container">'
@@ -13,7 +12,18 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
             $head += `
                 <h1 class="logo">
                     <a href="/" title="${_configs['logo_alt']}">
-                        <img src="${_configs.logo}"/>
+                `;
+            if (_configs.logo) {
+            $head += `
+                        <img src="${_configs.logo}"/>`;
+            }
+            if (_configs.text) {
+              $head += `
+                        <span>${_configs.text}</span>`;
+              }
+            }
+
+            $head += `
                     </a>
                 </h1>
             `;
@@ -58,4 +68,3 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
         })
     }
 });
-

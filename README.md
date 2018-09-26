@@ -1,13 +1,17 @@
-# gitbook-plugin-header
+# gitbook-plugin-custom-header-next
 
-* 插件配置
+## Installation
+```
+npm install gitbook-plugin-custom-header-next
+gitbook install gitbook-plugin-custom-header-next
+```
+
+## Configuration
 
 ```javascript
 "header": {
   "logo":"ddd.png",
   "logo_alt":"paas",
-  "navigations": [{"title":"第一章", "link":"http://www.baidu.com", "id":"abc", "child":[{"title":"第一节", "link":"http://www.baidu.com", "id":"abd"}]}],
+  "navigations": [{"title":"Link 1", "link":"http://www.google.com", "id":"testid1", "child": [{"title":"Link 2", "link":"http://yahoo.com", "id":"testid2"}]}],
 }
 ```
-
-> logo 是站点logo  navigations是导航按钮 id是dom元素的ID

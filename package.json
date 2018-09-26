@@ -1,63 +1,10 @@
 {
-  "_from": "gitbook-plugin-custom-header@^0.0.6",
-  "_id": "gitbook-plugin-custom-header@0.0.6",
-  "_inBundle": false,
-  "_integrity": "sha1-VcXUuU7OGncvbqC16h0eGholny0=",
-  "_location": "/gitbook-plugin-custom-header",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "gitbook-plugin-custom-header@^0.0.6",
-    "name": "gitbook-plugin-custom-header",
-    "escapedName": "gitbook-plugin-custom-header",
-    "rawSpec": "^0.0.6",
-    "saveSpec": null,
-    "fetchSpec": "^0.0.6"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "https://registry.npmjs.org/gitbook-plugin-custom-header/-/gitbook-plugin-custom-header-0.0.6.tgz",
-  "_shasum": "55c5d4b94ece1a772f6ea0b5ea1d1e1a1a259f2d",
-  "_spec": "gitbook-plugin-custom-header@^0.0.6",
-  "_where": "/Users/sandwich/Develop/block.one/eosjs2",
-  "author": {
-    "name": "painsOnline",
-    "email": "914616991@qq.com"
-  },
-  "bugs": {
-    "url": "https://github.com/painsOnline/gitbook-plugin-custom-header/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {},
-  "deprecated": false,
-  "description": "为头部添加导航",
-  "engines": {
-    "gitbook": ">=2.5.0"
-  },
-  "homepage": "https://github.com/painsOnline/gitbook-plugin-custom-header#readme",
-  "keywords": [
-    "gitbook",
-    "gitbook-plugin",
-    "header",
-    "modification"
-  ],
-  "language": "zh-hans",
-  "license": "Apache-2.0",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "painsOnline",
-      "email": "914616991@qq.com"
-    }
-  ],
-  "name": "gitbook-plugin-custom-header",
+  "name": "gitbook-plugin-custom-header-next",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/painsOnline/gitbook-plugin-custom-header.git"
   },
   "scripts": {},
-  "title": "用户自定义头部插件",
-  "version": "0.0.6"
+  "title": "Gitbook Plugin Custom Header (Next)",
+  "version": "0.0.7"
 }

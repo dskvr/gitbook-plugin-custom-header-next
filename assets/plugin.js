@@ -8,26 +8,23 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
     function initHeader(_configs) {
         let $head = '<div class="head"><div class="head_box">'
         let $head_small = '<div class="head_small"><div class="swiper-container">'
-        if (_configs.logo) {//添加logo
-            $head += `
-                <h1 class="logo">
-                    <a href="/" title="${_configs['logo_alt']}">
-                `;
-            if (_configs.logo) {
-            $head += `
-                        <img src="${_configs.logo}"/>`;
-            }
-            if (_configs.text) {
-              $head += `
-                        <span>${_configs.text}</span>`;
-              }
-            }
 
-            $head += `
-                    </a>
-                </h1>
+        $head += `
+            <h1 class="logo">
+                <a href="/" title="${_configs['logo_alt']}">
             `;
+        if (_configs.logo) {
+          $head += `
+                    <img src="${_configs.logo}"/>`;
         }
+        if (_configs.text) {
+          $head += `
+                    <span>${_configs.text}</span>`;
+        }
+        $head += `
+                </a>
+            </h1>
+        `;
         let activeIndex = 0
         if (_configs.navigations && _configs.navigations.length > 0) {//添加导航
             $head += '<div class="header_ctrls"><ul class="top_nav">'

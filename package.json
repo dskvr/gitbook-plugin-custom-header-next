@@ -1,10 +1,23 @@
 {
   "name": "gitbook-plugin-custom-header-next",
+  "title": "Gitbook Plugin Custom Header (Next)",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/painsOnline/gitbook-plugin-custom-header.git"
+    "url": "git+https://github.com/dskvr/gitbook-plugin-custom-header-next.git"
   },
+  "engines": {
+    "gitbook": ">1.x.x"
+  },
+  "gitbook": {
+     "properties": {
+         "myConfigKey": {
+             "type": "string",
+             "default": "it's the default value",
+             "description": "It defines my awesome config!"
+         }
+     }
+ },
   "scripts": {},
-  "title": "Gitbook Plugin Custom Header (Next)",
-  "version": "0.0.7"
+
 }

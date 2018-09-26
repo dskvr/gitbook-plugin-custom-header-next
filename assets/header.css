@@ -78,7 +78,7 @@ header#main .inner h1 {
 }
 
 .logo {
-    float: left;
+    /* float: left; */
     height: 100%;
     font-size: 24px;
 }

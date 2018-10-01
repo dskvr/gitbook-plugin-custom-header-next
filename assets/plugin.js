@@ -10,7 +10,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
         let $head_small = '<header id="small"><div class="swiper-container">';
 
         $head += `
-            <a href="/" title="${_configs['logo_alt']}" class="logo">
+            <a href="${_configs['base_path']}" title="${_configs['logo_alt']}" class="logo">
             `;
         if (_configs.logo) {
           $head += `
